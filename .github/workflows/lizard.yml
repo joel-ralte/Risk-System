@@ -2,7 +2,7 @@ name: Lizard Runner
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -21,4 +21,4 @@ jobs:
       run: pip install lizard
 
     - name: Run Lizard
-      run: lizard .
+      run: lizard . --CCN 3
